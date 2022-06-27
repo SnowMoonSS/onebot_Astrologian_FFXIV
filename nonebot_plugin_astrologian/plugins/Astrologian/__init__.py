@@ -10,7 +10,7 @@ from .data_source import luck_daily
 
 global_config = nonebot.get_driver().config
 plugin_config = Config(**global_config.dict())
-luck = on_command("luck", aliases={"占卜", "zhanbu"}, temp=False, priority=5)
+luck = on_command("占卜", aliases={"zhanbu"}, temp=False, priority=5)
 group: bool = True
 
 
